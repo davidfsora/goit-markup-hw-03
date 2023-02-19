@@ -1,0 +1,334 @@
+:root {
+    --main-color: #2196F3;
+    --teambackground-color: #F5F4FA;
+    --footer-color: #2F303A;
+    --heading-color: #212121;
+    --paragraph-color: #757575;
+    --hovereditemtext-color: #fff;
+    --hoveredservicebutton-color: #188CE8;
+    --border-color: #ECECEC;
+    --filterbuttonback-color: #F5F4FA;
+    --itemsborder-color:#EEEEEE;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    padding-inline-start: 0;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: var(--paragraph-color);
+}
+
+h2, h3, a {
+    color: var(--heading-color);
+}
+
+header a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+footer a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.features, .services, .team {
+    padding: 47px 0;
+    max-width: 100%;
+}
+
+.features-box {
+    padding: 0 3rem;
+    margin: 0;
+}
+
+.services {
+    padding: 94px 2rem;
+    margin: 0;
+}
+
+.currentpage {
+    color: var(--main-color);
+}
+
+.team {
+    background-color: var(--teambackground-color);
+    text-align: center;
+}
+
+.team-member {
+    background-color: var(--hovereditemtext-color);
+}
+
+address {
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:hover,
+a:focus {
+    color: var(--main-color);
+}
+
+.presentation {
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.location {
+    color: var(--hovereditemtext-color);
+}
+
+.contact-info {
+    color: var(--paragraph-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    margin: 0 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.servicebutton {
+    background-color: var(--main-color);
+    color: var(--hovereditemtext-color);
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+}
+
+.servicebutton:hover {
+    background-color: var(--hoveredservicebutton-color);
+    cursor: pointer;
+}
+
+.presentation, footer {
+    background-color: var(--footer-color);
+    color: var(--hovereditemtext-color);
+} 
+
+.features h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.team-member h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.services p {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.team p {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.barcontainer {
+    padding: 0.5rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navigation {
+    display: flex;
+}
+
+#pages li, #contact li {
+    display: inline-block;
+}
+
+#pages a, #contact a {
+    padding: 2rem 1rem;
+}
+
+.features li {
+    width: 250px;
+    height: auto;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;    
+}
+
+.services h2 {
+    text-align: center;
+}
+
+.services li {
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.team-members {
+    margin: 0;
+}
+
+.team li {
+    height: auto;
+    width: auto;
+    margin: 10px;
+    display: inline-block;
+    text-align: inherit;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 2rem 3rem;
+}
+
+footer ul {
+    margin-bottom: 0;
+}
+
+.filterselect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterselect li {
+    margin: 0.2rem;
+    border: none;
+}
+
+.filterbutton {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 0.5rem 1rem;
+    color: var(--heading-color);
+    background-color: var(--filterbuttonback-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.filterbutton:hover {
+    background-color: var(--main-color);
+    color: var(--hovereditemtext-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px var(--paragraph-color);
+}
+
+.activefilter {
+    background-color: var(--main-color);
+    color: var(--hovereditemtext-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px var(--paragraph-color);
+}
+
+.cards-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 0.6rem;
+    width: 366px;
+    height: auto;
+    border: 1px solid var(--itemsborder-color);
+}
+
+.card-body h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    padding: 0.3rem 1rem;
+}
+
+.card-body p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding: 0.3rem 1rem;
+}
+
+.card h3, .card p {
+    margin: 0;
+}
