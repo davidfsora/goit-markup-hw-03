@@ -60,36 +60,55 @@ h2 {
 
 .container {
     max-width: 1200px;
-    padding: 0;
-    margin: 0;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.features, .services, .team {
-    padding: 47px 0;
-    max-width: 100%;
+.features, .services {
+    padding: 95px 0;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .features-box {
-    padding: 0 3rem;
-    margin: 0;
-}
-
-.services {
-    padding: 94px 2rem;
-    margin: 0;
-}
-
-.currentpage {
-    color: var(--main-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .team {
     background-color: var(--teambackground-color);
     text-align: center;
+    padding: 95px 0;
+}
+
+.team-members {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-container {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
 }
 
 .team-member {
     background-color: var(--hovereditemtext-color);
+}
+
+.currentpage {
+    color: var(--main-color);
 }
 
 address {
@@ -134,7 +153,6 @@ a:focus {
     line-height: 31px;
     text-align: right;
     letter-spacing: 0.03em;
-    margin: 0 1rem;
 }
 
 .logo-container {
@@ -197,9 +215,6 @@ a:focus {
 }
 
 .barcontainer {
-    padding: 0.5rem 8rem;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -235,10 +250,6 @@ a:focus {
     text-align: center;
 }
 
-.team-members {
-    margin: 0;
-}
-
 .team li {
     height: auto;
     width: auto;
@@ -252,14 +263,11 @@ footer {
     padding: 2rem 3rem;
 }
 
-footer ul {
-    margin-bottom: 0;
-}
-
 .filterselect {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 94px 0px 50px 0px;
 }
 
 .filterselect li {
@@ -299,11 +307,12 @@ footer ul {
 .cards-container {
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding-bottom: 94px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .card {
